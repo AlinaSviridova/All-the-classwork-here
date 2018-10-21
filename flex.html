@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <body>
+    <style>
+    
+    body
+{
+  margin: 0;
+}
+
+.container
+{
+    display: flex;  /* указываем что работаем с флексами*/
+  flex-direction: row; /*   row (значение по умолчанию) : слева направо (в rtl справа налево)
+                            row-reverse: справа налево (в rtl слева направо)
+                            column: сверху вниз
+                            column-reverse: снизу вверх*/
+  flex-wrap: wrap-reverse; /*блоки расположены в несколько горизонтальных рядов (если не помещаются в один ряд). Они следуют друг за другом слева направо
+  */
+  justify-content: space-around; /* */
+   align-items: stretch; /* */
+   align-content: center; /*align-content, которое определяет то, каким образом образовавшиеся ряды блоков будут выровнены по вертикали и как они поделят между собой все пространство flex-контейнера.
+   Важно: align-content работает только в многострочном режиме (т.е. в случае flex-wrap:wrap; или flex-wrap:wrap-reverse;) */
+  height: 350px; /* */
+  background: yellow;
+
+ 
+}
+
+.box
+{
+  background: red;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  line-height: 100px;
+ 
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+.box2 {
+      flex-grow: 2;
+  }
+
+    </style>
+
+
+
+<div class="container">
+        <div class="box">1</div>
+        <div class="box box2">2</div>
+        <div class="box">3</div>
+     <!--   <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div> -->
+      </div>
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"; href="css/floatsgrids.css">
+    <link rel = "stylesheet" type="text/css" href = "floatsgrids.css">
+    <link rel = "stylesheet" type="text/css" href = "960_12_col.css">
+
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- Относительно другихэлементов-->
+    <br>   <div class="brdr1">   
+        <h1>Lorem ipsum dolor</h1>
+            <p class="examplerelative">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>   
+    </div>          
+    <!-- Тут параметры относятся абсолютно к положению контейнера -->
+    <br>   <div class="brdr2">
+        <h1 class="exampleabsolute">Sed do eiusmod tempor</h1>
+        <p class="exampleabsolute">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p> 
+     </div> 
+    <!-- Тут параметры относятся к браузеру и при скроллинге не будет никуда прокручиваться -->
+    <br>   <div class="brdr3">
+            <h1 class="examplefixed">Sed do eiusmod tempor</h1>
+            <p class="examplefixed">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p> 
+
+  </div>
+    <!-- поменять отношения блока относительно друг друга, это очередность послойных элементов когда нужно чтобы один элемент накладывалсяна другойю Он определяет уровни, ели бы было несколько яиндексов определило бы какой будет ближе расположен или глубжею Например фиксированный хедер делается именно так -->
+ <!-- <br>     <div class="brdr4">
+            <h1 class="examplezind">bbbbbbbbbbbbbbbb</h1>
+            <p class="examplezind">bbbbbbbbbbbbbbbbbbbbt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p> 
+
+    </div>  -->
+<!-- float говорит не значит направо, значит направо и обтекай. Всегда нужно указывать ширину чтобы не получить непредсказуемый рещультат-->
+  <br>  <div class="brdr5">
+            <h1>bbbbbbbbbbbbbbbb</h1>
+            <blockquote>bbbbbbbbbbbbbbbbbbbbt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </blockquote> 
+            <p>bbbbbbbbbbbbbbbbbbbbt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p> 
+    </div>
+
+<!-- float для колонок    
+float: left; это значит слева расположено внутри контейнера касаемо другого элемента этого контейнера-->
+<!-- clear - ни один из элеентов не касается к левой или и правой стороне  -->
+<br>  <div class="brdr6">
+        <h1>ffffffffffffff</h1>
+        <p class="float2">ffffffffffffffff labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p> 
+        <p class="float2">ffffffffffffffffffffffffffore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p> 
+        <p class="float2">ffffffffffffffff labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p class="float2">ffffffffffffffff labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            <p class="float2" class="clear">ffffffffffffffff labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="float2">ffffffffffffffff labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+</div>
+
+<!-- Если при применении флоата, браузер не видит высоту бордера (схлопывает) - значит нужно починить
+div {
+    border: 1px solid black;
+    owerflow :auto;
+width: 100%; }
+ -->
+
+</body>
+</html>
